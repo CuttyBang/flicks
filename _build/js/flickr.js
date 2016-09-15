@@ -1,11 +1,12 @@
 const $ = require('jquery');
-  window.setTimeout(()=>{$('.loading-page').fadeOut('fast');}, 1000);
+
   var deviceSize;
   var pick;
   var pics = [];
 
   function init(){
     $('input[type=text]').val('');
+    window.setTimeout(()=>{$('.loading-page').fadeOut('fast');}, 1000);
     window.setTimeout(()=>{$('h1').animate({opacity: 1, top: 300, fontSize: 56}, 1000)}, 1500);
     //window.setTimeout(()=>{$('h1').animate({top: 330}, 100).animate({top: 270}, 1000)
     //.animate({top: 310}, 100).animate({top: 290}, 100).animate({top: 300}, 100)}, 1500);
