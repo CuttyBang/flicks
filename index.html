@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title></title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="icon" href="">
+  <link rel="apple-touch-icon" href="">
+
+  <link rel="stylesheet" href="assets/css/normalize.css">
+  <script type="text/javascript" src="assets/js/vendor/modernizr-2.8.3.min.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300|Lobster+Two" rel="stylesheet">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
+  <script type="text/javascript" src="assets/js/bundle.js"></script>
+</head>
+<body>
+  <div id="wrapper">
+    <!-- Sidebar -->
+    <div id="sidebar-wrapper">
+      <ul class="sidebar-nav">
+          <li class="sidebar-brand" id="brand"><img id="mainLogo" class="logo" src="assets/img/flickeroo-logo.png" alt="Flickeroo Logo"/><!--a href="#">Flickroo</a--></li>
+              <div class="input-group custom-search-form">
+                <label class="sr-only" for="search-query">Search Query</label>
+                <input type="text" class="form-control" id="search-query" placeholder="Search..." />
+                <span class="input-group-btn">
+                    <button class="btn btn-default" type="submit" id="submit"><i class="fa fa-search"></i></button>
+                </span>
+              </div>
+              <!-- /input-group -->
+          </li>
+          <!--li><button type="radio" class="btn btn-lrg sizes not-active" id="small"><i class="fa fa-mobile"></i></button></li>
+          <li><button type="radio" class="btn btn-lrg sizes not-active" id="med"><i class="fa fa-tablet"></i></button></li>
+          <li><button type="radio" class="btn btn-lrg sizes not-active" id="large"><i class="fa fa-desktop"></i></button></li-->
+        <li>
+          <div class="btn-group btn-group-vertical selection" role="group" data-toggle="buttons" >
+              <label class="btn size">
+                <input type="radio" class="buttons" name="choice" id="small" value="500" autocomplete="off"><i class="fa fa-mobile"></i>
+              </label>
+              <label class="btn size">
+                <input type="radio" class="buttons" name="choice" id="med" value="1024" autocomplete="off"><i class="fa fa-tablet"></i>
+              </label>
+              <label class="btn size">
+                <input type="radio" class="buttons" name="choice" id="large" value="1600" autocomplete="off"><i class="fa fa-desktop"></i>
+              </label>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <div id="page-content-wrapper">
+      <div class="container-fluid" id="main-content">
+        <header class="cover-container">
+          <div class="inner cover">
+            <h1 class="cover-heading copy">Background images from Flickr made <strong>easy!</strong></h1>
+          </div>
+        </header>
+          <div id="alert" class="alert alert-warning alert-dismissible fade in hidden" role="alert">
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <strong>Wait!</strong> I need a search query AND a device size!
+          </div>
+        <div class="row">
+          <div class="photo-container">
+
+            <a href="#menu-toggle" class="btn btn-default" id="menu-toggle">Toggle Menu</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-beta1/jquery.js"></script-->
+  <!--script>window.jQuery || document.write('<script src="../assets/js/vendor/jquery.min.js"><\/script>')</script-->
+</body>
+</html>
