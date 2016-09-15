@@ -6,9 +6,9 @@ const $ = require('jquery');
 
   function init(){
     $('input[type=text]').val('');
-    window.setTimeout(()=>{$('h1').animate({opacity: 1, top: 300, fontSize: 56}, 1000)}, 1000);
-    window.setTimeout(()=>{$('h1').animate({top: 330}, 100).animate({top: 270}, 100)
-    .animate({top: 310}, 100).animate({top: 290}, 100).animate({top: 300}, 100)}, 1500);
+    window.setTimeout(()=>{$('h1').animate({opacity: 1, top: 300, fontSize: 56}, 1000)}, 1500);
+    //window.setTimeout(()=>{$('h1').animate({top: 330}, 100).animate({top: 270}, 1000)
+    //.animate({top: 310}, 100).animate({top: 290}, 100).animate({top: 300}, 100)}, 1500);
     window.setTimeout(()=>{$('h1').animate({fontSize: 60}, 200).animate({top: 400}, 50)
     .animate({top: -100, opacity: 0, fontSize: 28}, 200)}, 3000);
   }
