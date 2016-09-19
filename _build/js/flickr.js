@@ -1,5 +1,10 @@
 const $ = require('jquery');
-  window.setTimeout(()=>{$('.loading-page').fadeOut('fast');}, 1000);
+  window.setTimeout(()=>{
+    $('.wrapper').removeClass('hidden');
+  },1200);
+  window.setTimeout(()=>{
+    $('.loading-page').fadeOut('fast');
+  }, 1000);
   var deviceSize;
   var pick;
   var pics = [];
