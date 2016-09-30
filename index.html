@@ -16,54 +16,58 @@
 </head>
 <body>
   <div class="loading-page"><img class="se-pre-con" src="assets/img/Preloader_2.gif" alt="loading icon" /></div>
-
-  <div id="hidden wrapper">
-    <!-- Sidebar -->
-    <div id="sidebar-wrapper">
-      <ul class="sidebar-nav">
-          <li class="sidebar-brand" id="brand"><img id="mainLogo" class="logo" src="assets/img/flickeroo-logo.png" alt="Flickeroo Logo"/><!--a href="#">Flickroo</a--></li>
-              <div class="input-group custom-search-form">
-                <label class="sr-only" for="search-query">Search Query</label>
-                <input type="text" class="form-control" id="search-query" placeholder="Search..." />
-                <span class="input-group-btn">
-                    <button class="btn btn-default" type="submit" id="submit"><i class="fa fa-search"></i></button>
-                </span>
-              </div>
-              <!-- /input-group -->
+  <div id="main hidden">
+    <div id="wrapper">
+      <!-- Sidebar -->
+      <div id="sidebar-wrapper">
+        <ul class="sidebar-nav">
+            <li class="sidebar-brand" id="brand"><img id="mainLogo" class="logo" src="assets/img/flickeroo-logo.png" alt="Flickeroo Logo"/><!--a href="#">Flickroo</a--></li>
+                <div class="input-group custom-search-form">
+                  <label class="sr-only" for="search-query">Search Query</label>
+                  <input type="text" class="form-control" id="search-query" placeholder="Search..." />
+                  <span class="input-group-btn">
+                      <button class="btn btn-default" type="submit" id="submit"><i class="fa fa-search"></i></button>
+                  </span>
+                </div>
+                <!-- /input-group -->
+            </li>
+            <!--li><button type="radio" class="btn btn-lrg sizes not-active" id="small"><i class="fa fa-mobile"></i></button></li>
+            <li><button type="radio" class="btn btn-lrg sizes not-active" id="med"><i class="fa fa-tablet"></i></button></li>
+            <li><button type="radio" class="btn btn-lrg sizes not-active" id="large"><i class="fa fa-desktop"></i></button></li-->
+          <li>
+            <div class="btn-group btn-group-vertical selection" role="group" data-toggle="buttons" >
+                <label class="btn size">
+                  <input type="radio" class="buttons" name="choice" id="small" value="500" autocomplete="off"><i class="fa fa-mobile"></i>
+                </label>
+                <label class="btn size">
+                  <input type="radio" class="buttons" name="choice" id="med" value="1024" autocomplete="off"><i class="fa fa-tablet"></i>
+                </label>
+                <label class="btn size">
+                  <input type="radio" class="buttons" name="choice" id="large" value="1600" autocomplete="off"><i class="fa fa-desktop"></i>
+                </label>
+            </div>
           </li>
-          <!--li><button type="radio" class="btn btn-lrg sizes not-active" id="small"><i class="fa fa-mobile"></i></button></li>
-          <li><button type="radio" class="btn btn-lrg sizes not-active" id="med"><i class="fa fa-tablet"></i></button></li>
-          <li><button type="radio" class="btn btn-lrg sizes not-active" id="large"><i class="fa fa-desktop"></i></button></li-->
-        <li>
-          <div class="btn-group btn-group-vertical selection" role="group" data-toggle="buttons" >
-              <label class="btn size">
-                <input type="radio" class="buttons" name="choice" id="small" value="500" autocomplete="off"><i class="fa fa-mobile"></i>
-              </label>
-              <label class="btn size">
-                <input type="radio" class="buttons" name="choice" id="med" value="1024" autocomplete="off"><i class="fa fa-tablet"></i>
-              </label>
-              <label class="btn size">
-                <input type="radio" class="buttons" name="choice" id="large" value="1600" autocomplete="off"><i class="fa fa-desktop"></i>
-              </label>
+        </ul>
+      </div>
+        <div class="container-fluid" id="main-content">
+          <div id="tog-button">
+            <a href="#menu-toggle" class="btn btn-sm" id="menu-toggle"><i id="menu-icon" class="fa fa-bars" aria-hidden="true"></i></a>
           </div>
-        </li>
-      </ul>
-    </div>
-    <div id="page-content-wrapper">
-      <div class="container-fluid" id="main-content">
-        <header class="cover-container">
-          <div class="inner cover">
-            <h1 class="cover-heading copy">Background images from Flickr made <strong>easy!</strong></h1>
-          </div>
-        </header>
-          <div id="alert" class="alert alert-warning alert-dismissible fade in hidden" role="alert">
-            <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-            <strong>Wait!</strong> I need a search query AND a device size!
-          </div>
-        <div class="row">
-          <div class="photo-container">
+          <header class="cover-container">
+            <div class="inner cover">
+              <h1 class="cover-heading copy">Background images from Flickr made <strong>easy!</strong></h1>
+            </div>
+          </header>
+            <div id="alert" class="alert alert-warning alert-dismissible fade in hidden" role="alert">
+              <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              <strong>Wait!</strong> I need a search query AND a device size!
+            </div>
+          <div class="row">
+            <div class="main-window">
+              <div class="photo-container">
 
-            <a href="#menu-toggle" class="btn btn-default" id="menu-toggle">Toggle Menu</a>
+              </div>
+            </div>
           </div>
         </div>
       </div>

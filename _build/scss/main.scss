@@ -29,6 +29,8 @@ body {
 /*===========================>
 MAIN
 <============================*/
+
+
 #main-content{
   background-image: none;
 }
@@ -53,6 +55,16 @@ MAIN
 }
 .logo {
   width: 80%;
+}
+
+#tog-button{
+  position: relative;
+  top: 20px;
+  padding-left: 10px;
+}
+
+#menu-icon{
+  font-size: 2rem;  
 }
 
 #wrapper {
