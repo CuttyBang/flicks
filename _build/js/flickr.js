@@ -53,6 +53,18 @@ function searchImg(){
   });
 }
 
+$(document).keypress((e)=>{
+  if(e.which === 13){
+    if($('input[type=text]').val() === ''){
+      $('#alert').removeClass('hidden');
+    }else{
+      $('#alert').addClass('hidden');
+      searchImg();
+    }
+  }
+});
+
+
 $('#submit').click(()=>{
   deviceSize = $('input[name=choice]:checked').val();
   console.log(deviceSize);
