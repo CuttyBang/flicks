@@ -20,8 +20,8 @@ const $ = require('jquery');
 
 
 
-
   function searchImg(){
+    $('input[type=text]').val('');
     $('.photo-container').html('');
     var query = $('input[type=text]').val();
     var key = '4e45669371625ebbc0477774d58d8a1e';
@@ -43,14 +43,25 @@ const $ = require('jquery');
   }
   window.onload = init;
 
+  $(document).keypress((e)=>{
+    if(e.which === 13){
+      if($('input[type=text]').val() === ''){
+        $('#alert').removeClass('hidden');
+      }else{
+        $('#alert').addClass('hidden');
+        searchImg();
+      }
+    }
+  });
+
   $('#submit').click(()=>{
     deviceSize = $('input[name=choice]:checked').val();
     console.log(deviceSize);
     if($('input[type=text]').val() === '' || !deviceSize){
       $('#alert').removeClass('hidden');
     }else{
+      $('#alert').addClass('hidden');
       searchImg();
-      $('input[type=text]').val('');
     }
   });
 
