@@ -21,12 +21,13 @@ var pick;
 var pics = [];
 
 function init(){
-  $('input[type=text]').val('');
+  //$('#small').button('toggle');
+
+  $('input[type=text]').val() == '';
   window.setTimeout(()=>{$('h1').animate({opacity: 1, top: 300, fontSize: 48}, 1000)}, 1500);
   //window.setTimeout(()=>{$('h1').animate({top: 330}, 100).animate({top: 270}, 1000)
   //.animate({top: 310}, 100).animate({top: 290}, 100).animate({top: 300}, 100)}, 1500);
-  window.setTimeout(()=>{$('h1').animate({fontSize: 50}, 200).animate({top: 400}, 50)
-  .animate({top: -100, opacity: 0, fontSize: 28}, 200)}, 3000);
+  window.setTimeout(()=>{$('h1').animate({opacity: 0}, 1000)}, 3000);
 }
 
 
@@ -44,7 +45,7 @@ function searchImg(){
         $.each(size.sizes.size, (i,sizeResult)=>{
           if(sizeResult.width==deviceSize){
             pics.push(sizeResult);
-            pick = '<p class="flicks"><a href="'+sizeResult.url+'" target="_blank"><img src="'+sizeResult.source+'"/>';
+            pick = '<a href="'+sizeResult.url+'" target="_blank"><img class="flicks cover" src="'+sizeResult.source+'"/>';
             $('.photo-container').append(pick);
           }
         });

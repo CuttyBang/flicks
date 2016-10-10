@@ -42,8 +42,12 @@ MAIN
   visibility: hidden;
 }
 */
-.cover {
+.cover{
   padding: 0 20px;
+}
+
+.layout{
+  width: 90%;
 }
 
 .cover-container {
@@ -64,7 +68,7 @@ MAIN
 }
 
 #menu-icon{
-  font-size: 2rem;  
+  font-size: 2rem;
 }
 
 #wrapper {
@@ -163,7 +167,6 @@ SIDEBAR
 .size {
   height: 3em;
   font-size: 4em;
-
 }
 
 
@@ -184,7 +187,7 @@ SIDEBAR
 }
 
 .flicks{
-  display:inline-flex;
+  display: inline-flex;
 }
 
 h1{
